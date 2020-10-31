@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiches | Natalia Aliano .</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/aee199d837.js" crossorigin="anonymous"></script>
+<!-- Galería de fotos -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+</head>
+
+<body class="background">
+	<header class="header">
+		<input type="checkbox" id="nav-responsive">
+		<label for="nav-responsive">
+			<img src="img/menu-responsive.png" width="30" height="23" alt="Menú">
+		</label>
+			<nav class="nav-general">
+				<ul>
+					<li><a href="sobre_mi.html">sobre mí</a></li>
+					<li><a href="portfolio.html">portfolio</a>
+						<ul class="submenu">
+							<li><a href="p_identidad.html">identidad</a></li>
+							<li><a href="p_editorial.html">editorial</a></li>
+							<li><a href="p_pinturas.html">pinturas</a></li>
+							<li><a href="p_afiches.html">afiches</a></li>
+						</ul>
+					</li>
+					<li><a href="contacto.html">contacto</a></li>
+				</ul>
+			</nav>
+		<a href="index.html" class="bold">NATALIA a.</a>
+	</header>
+	
+	<main>
+		<section class="galeria">
+			<h2><a href="portfolio.html" class="flecha">«</a> AFICHES .</h2>
+			<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+			<div id="blueimp-gallery" class="blueimp-gallery">
+				<!-- The container for the modal slides -->
+				<div class="slides"></div>
+				<!-- Controls for the borderless lightbox -->
+				<h3 class="title"></h3>
+				<a class="prev">‹</a>
+				<a class="next">›</a>
+				<a class="close">×</a>
+				<a class="play-pause"></a>
+				<ol class="indicator"></ol>
+				<!-- The modal dialog, which will be used to wrap the lightbox content -->
+				<div class="modal fade">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" aria-hidden="true">&times;</button>
+								<h4 class="modal-title"></h4>
+							</div>
+							<div class="modal-body next"></div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default pull-left prev">
+									« Anterior
+								</button>
+								<button type="button" class="btn btn-primary next">
+									Siguiente »
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="trabajo">
+				<p class="descripcion"><span class="italic">Taller de Diseño II, 2017.</span></p>
+			</div>
+			<div class="links">
+				<a href="img/galerias/afiches/grandes/afiches1.jpg" title="Afiche de conciencia social" data-gallery>
+					<img src="img/galerias/afiches/miniaturas/afiches1.png" width="155" height="155" alt="Taller de Diseño II">
+				</a>
+				<a href="img/galerias/afiches/grandes/afiches2.jpg" title="Afiche de conciencia social" data-gallery>
+					<img src="img/galerias/afiches/miniaturas/afiches2.png" width="155" height="155" alt="Taller de Diseño II">
+				</a>
+				<a href="img/galerias/afiches/grandes/afiches3.jpg" title="Afiche humorístico" data-gallery>
+					<img src="img/galerias/afiches/miniaturas/afiches3.png" width="155" height="155" alt="Taller de Diseño II">
+				</a>
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<div class="redes">
+			<a href="http://instagram.com/#" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="http://twitter.com/#" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a href="http://facebook.com/#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://ar.linkedin.com/#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+		<h6>© 2020</h6>
+	</footer>
+	
+<!-- js galería -->	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+</body>
+</html>

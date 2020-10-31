@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*ASPECTOS GENERALES*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	/*max-width: 1280px;*/
+}
+
+body {
+	font-family: "DIN Pro", "Segoe", "Segoe UI", "DejaVu Sans", "Trebuchet MS", "Verdana", "sans-serif";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.9375em;
+	background-color: #FCDCDB;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.background {
+	background-image: url("img/background.svg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-color: #FCDCDB;
+}
+
+h1 {
+	font-size: 4em;
+	letter-spacing: 4px;
+}
+
+h2 {
+	color: #34B2C5;
+	margin-bottom: 15px;
+	margin-left: 5px;
+	font-size: 1.7em;
+}
+
+h6 {
+	text-align: right;
+	margin-right: 20px;
+	font-weight: 100;
+	font-size: 0.875em;
+	letter-spacing: 2px;
+}
+
+.flecha {
+	text-decoration: none;
+	color: #34B2C5;
+}
+
+.light {
+	font-weight: 100;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+	/***INDEX***/
+
+.header-index {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 40%;
+	height: 370px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.nav-index {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 0px;
+}
+
+.nav-index a {
+	color: black;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 1.5em;
+	font-weight: 100;
+}
+
+	/*animación fondo*/
+
+.flores-animacion {
+	background-image: url("img/background.svg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	animation: flores 5s infinite ease-in-out;
+}
+
+@keyframes flores {
+	0% {
+		background-image: url("img/background.svg");
+	}
+	40% {
+		background-image: url("img/background-2.svg");
+	}
+	80% {
+		background-image: url("img/background-3.svg");
+	}
+	100% {
+		background-image: url("img/background.svg");
+	}
+}
+
+	/***HEADER***/
+
+.header {
+	width: 60%;
+	height: 45px;
+	background-color: white;
+	padding: 13px 30px;
+	margin: 50px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header a {
+	text-decoration: none;
+	color: black;
+	letter-spacing: 2px;
+}
+
+#nav-responsive {
+	display: none;
+}
+
+.header label {
+	display: none;
+	width: 30px;
+	height: 23px;
+}
+
+.header label:hover {
+	cursor: pointer;
+}
+
+.nav-general > ul {
+	list-style: none;
+	display: flex;
+	height: auto;
+}
+
+.nav-general > ul li a {
+	margin: 20px;
+	color: black;
+	text-decoration: none;
+	font-weight: 100;
+}
+
+.nav-general a:hover {
+	color: #34B2C5;
+}
+
+	/*menu desplegable*/
+
+.submenu {
+	display: inline;
+	display: none;
+	list-style: none;
+	background-color: white;
+	position: absolute;
+	padding-top: 13px;
+}
+
+.nav-general ul li:hover .submenu {
+	display: block;
+}
+
+.submenu li {
+	width: 130px;
+	padding: 10px 0px;
+	border-top: 1px solid #FCDCDB;
+}
+
+	/***MAIN***/
+
+main {
+	width: 50%;
+}
+
+	/*MAIN sobre mi*/
+
+.sm-contenedor {
+	display: flex;
+}
+
+.sobre-mi p {
+	margin-left: 20px;
+	margin-bottom: 16px;
+}
+
+.quote {
+	font-size: 1.125em;
+	margin-top: 30px;
+	text-align: center;
+	font-style: italic;
+}
+
+.vg {
+	text-align: center;
+}
+
+	/*MAIN portfolio*/
+
+.portfolio-img ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.portfolio-img ul li {
+	padding: 15px 15px 20px 15px;
+	background-color: white;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.portfolio-img li p {
+	text-align: center;
+	margin: 10px;
+	letter-spacing: 2px;
+}
+
+	/*MAIN galerías*/
+
+.links img {
+	margin: 10px;
+}
+
+.trabajo {
+	margin-top: 25px;
+}
+
+	/*MAIN contacto*/
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+.formulario input, textarea {
+	margin-bottom: 25px;
+	padding: 5px 10px;
+	border: none;
+	font-family: "DIN Pro", "Segoe", "Segoe UI", "DejaVu Sans", "Trebuchet MS", "Verdana", "sans-serif";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.9375em;
+	width: 100%;
+}
+
+.formulario textarea {
+	padding: 5px 10px 40px;
+	max-width: 100px;
+	min-width: 100%;
+	max-height: 100px;
+}
+
+.boton-enviar {
+	background-color: white;
+}
+
+.boton-enviar:hover {
+	background-color: #34B2C5;
+	color: white;
+	cursor: pointer;
+}
+
+	/***FOOTER***/
+
+footer {
+	width: 60%;
+	height: auto;
+	background-color: white;
+	padding: 15px 0px;
+	margin: 50px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.redes {
+	width: 100px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+
+.redes a {
+	color: black;
+}
+
+.redes a:hover {
+	color: #34B2C5;
+}
+
+/***MEDIA QUERIE***/
+
+@media screen and (max-width: 600px) {
+	
+	body {
+		width: 100%;
+	}
+	
+	.flores-animacion {
+		background-size: 190% auto;
+		background-position: top center;
+	}
+	
+	.background {
+		background-size: 260% auto;
+		background-position: top center;
+	}
+	
+	h1 {
+		text-align: center;
+		font-size: 3em;
+		line-height: 50px;
+		margin-bottom: 10px;
+	}
+	
+	h2 {
+		margin-bottom: 15px;
+		margin-left: 0px;
+		font-size: 1.5em;
+		text-align: center;
+	}
+	
+	h6 {
+		text-align: center;
+		margin-right: 0px;
+	}
+
+	/***HEADER***/
+	
+	.header {
+		width: 80%;
+		height: 51px;
+		margin: 30px 0px;
+	}
+	
+	.header label {
+		display: block;
+	}
+	
+	.nav-general {
+		position: absolute;
+		background-color: white;
+		width: 40%;
+		margin-left: -70%;
+		transition: all 0.5s;
+	}
+	
+	.nav-general ul {
+		flex-direction: column;
+	}
+	
+	.nav-general ul li {
+		padding: 15px 0px;
+		border-top: 1px solid #FCDCDB;
+	}
+	
+	#nav-responsive:checked ~ .nav-general {
+		margin: 38px 0%;
+	}
+	
+	.submenu li a {
+		display: none;
+	}	
+	
+	.nav-general ul li:hover .submenu {
+	display: none;
+}
+	
+	/***INDEX***/
+
+	.header-index {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+
+	.nav-index {
+		flex-direction: column;
+	}
+
+	.nav-index li {
+		margin-bottom: 20px;
+	}
+	
+		/***MAIN***/
+
+	main {
+		width: 65%;
+	}	
+	
+		/***MAIN sobre mi***/
+
+	.sm-contenedor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.sobre-mi {
+		margin-top: 20px;
+	}
+	
+	.sobre-mi p {
+		margin-left: 0px;
+	}
+	
+	.quote {
+		margin: 10px 0px;
+	}
+	
+		/***MAIN portfolio***/
+	
+	.portfolio-img ul {
+		justify-content: center;
+	}
+	
+		/*MAIN galerías*/
+
+	.links img {
+		margin: 10px 0px;
+	}
+	
+	.links {
+		text-align: center;
+	}
+
+	.trabajo {
+		margin-top: 25px;
+		text-align: center;
+	}
+
+	/***FOOTER***/
+	
+	footer {
+		margin: 40px 0px 30px 0px;
+		width: 80%;
+		padding: 15px 20px;
+	}
+
+	.redes {
+		margin-left: 0px;
+		font-size: 13px;
+	}
+}
